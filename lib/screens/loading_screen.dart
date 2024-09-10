@@ -8,6 +8,7 @@ const openWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather';
 
 class LoadingScreen extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _LoadingScreenState createState() => _LoadingScreenState();
 }
 
@@ -23,6 +24,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
     // ignore: use_build_context_synchronously
     Navigator.push(
+      // ignore: use_build_context_synchronously
       context,
       MaterialPageRoute(
         builder: ((context) {
